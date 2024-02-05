@@ -7,4 +7,6 @@ class GetOneUserController(Controller):
         self.service = service
     def handle(self,id:str):
         response= self.service.execute(id)
-        return jsonify(vars(response))
+        if response is None:
+            return jsonify({"message":"not found"}),404
+        return jsonify(vars(response)),200

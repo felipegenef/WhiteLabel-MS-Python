@@ -1,5 +1,7 @@
 from flask import Flask, Blueprint
 from routes import user
+
+
 app = Flask(__name__)
 api = Blueprint('app', __name__, url_prefix="/py/api")
 

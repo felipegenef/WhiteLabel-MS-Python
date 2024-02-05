@@ -1,6 +1,11 @@
 from usecases.User.GetOne.DTO import UserDTO
+from data.database import User
 
 class GetOneUserRepository:
     def findOne(self,id:str):
-        user=UserDTO(id,"Jhon")
-        return user
+        try:
+            userFound=User.get_by_id(id)
+            user=UserDTO(userFound.id,userFound.name)
+            return user
+        except:
+            return None
