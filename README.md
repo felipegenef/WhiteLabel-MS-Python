@@ -14,5 +14,5 @@ When developig a serverless Architecture, you can use this infrastructure as a L
 ## Run tests
 
 ```bash
-go test ./useCases...
+python3 -m unittest discover -s usecases/ -v
 ```
