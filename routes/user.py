@@ -1,5 +1,5 @@
 from flask import  Blueprint
-from  usecases.User.GetOne.index import  controller
+from  useCases.User.GetOne.index import  controller
 
 userRoutes = Blueprint('user', __name__,url_prefix="/user")
 

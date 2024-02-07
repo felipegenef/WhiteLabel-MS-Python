@@ -1,5 +1,5 @@
 from Global.Interfaces.Service import Service
-from usecases.User.GetOne.Repositories import GetOneUserRepository
+from useCases.User.GetOne.Repositories import GetOneUserRepository
 
 
 class GetOneUserService(Service):

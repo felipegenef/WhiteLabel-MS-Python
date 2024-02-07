@@ -1,5 +1,5 @@
 from Global.Interfaces.Controller import Controller
-from usecases.User.GetOne.Service import GetOneUserService
+from useCases.User.GetOne.Service import GetOneUserService
 from flask import  jsonify
 from Auth.auth import jwt_required
 

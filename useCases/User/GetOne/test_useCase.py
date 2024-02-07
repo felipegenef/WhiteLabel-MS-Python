@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import Mock
-from usecases.User.GetOne.Service import GetOneUserService
+from useCases.User.GetOne.Service import GetOneUserService
 from json import dumps,loads
 
 class TestGetOneUser(unittest.TestCase):

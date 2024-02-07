@@ -1,4 +1,4 @@
-from usecases.User.GetOne.DTO import UserDTO
+from useCases.User.GetOne.DTO import UserDTO
 from data.database import User
 
 class GetOneUserRepository:
